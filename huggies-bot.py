@@ -125,21 +125,21 @@ st.sidebar.info('Please choose the model from the dropdown below. The OpenAI API
 st.set_option('deprecation.showfileUploaderEncoding', False)
 add_selectbox = st.sidebar.selectbox("Which model would you like to use?", ("gpt-3.5-turbo", "text-davinci-003", "no context - davinci"))
 st.title("Newborn & Infants Bot")
-st.header('On the day you bring your newborn baby home, life as you know it changes forever. Huggies has put all their tips, techniques and information in one place, to help make newborn baby care as easy as possible for new parents')
+st.text_area('On the day you bring your newborn baby home, life as you know it changes forever. Huggies has put all their tips, techniques and information in one place, to help make newborn baby care as easy as possible for new parents')
 if add_selectbox == "gpt-3.5-turbo":
-    text1 = st.text_area('Enter your query:')
+    text1 = st.header('Enter your query:')
     output = ""
     if st.button("Ask Huggies Bot"):
         output = turbo(text1)
         st.success(output)
 elif add_selectbox == "text-davinci-003":
-    text1 = st.text_area('Enter your query:')
+    text1 = st.header('Enter your query:')
     output = ""
     if st.button("Ask Huggies Bot"):
         output = davinciC(text1)
         st.success(output)
 elif add_selectbox == "no context - davinci":
-    text1 = st.text_area('Enter your query:')
+    text1 = st.header('Enter your query:')
     output = ""
     if st.button("Ask Huggies Bot"):
         output = davinciNC(text1)
