@@ -121,7 +121,7 @@ button[title="View fullscreen"]{
 image = Image.open('logo.png')
 st.image(image, width=400)
 
-st.sidebar.info('Please choose the model from the dropdown below. The OpenAI API is powered by a diverse set of models with different capabilities. More info here - https://platform.openai.com/docs/models/overview')
+st.sidebar.info('Please choose the model from the dropdown below.')
 st.set_option('deprecation.showfileUploaderEncoding', False)
 add_selectbox = st.sidebar.selectbox("Which model would you like to use?", ("gpt-3.5-turbo", "text-davinci-003", "no context - davinci"))
 st.title("Newborn & Infants Bot")
