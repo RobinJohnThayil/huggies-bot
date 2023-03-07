@@ -121,9 +121,10 @@ button[title="View fullscreen"]{
 image = Image.open('logo.png')
 st.image(image, width=400)
 
-#st.sidebar.info('Please choose the model from the dropdown below.')
+st.sidebar.info('Please choose the model from the dropdown below.')
 st.set_option('deprecation.showfileUploaderEncoding', False)
-add_selectbox = st.sidebar.selectbox("Which model would you like to use?", ("gpt-3.5-turbo", "text-davinci-003", "no context - davinci"))
+#add_selectbox = st.sidebar.selectbox("Which model would you like to use?", ("gpt-3.5-turbo", "text-davinci-003", "no context - davinci"))
+add_selectbox = st.sidebar.selectbox("", ("gpt-3.5-turbo", "text-davinci-003", "no context - davinci"))
 st.sidebar.write('Note: Some models have been trained with select public content from www.huggies.com')
 
 st.title("Newborn & Infants Bot")
