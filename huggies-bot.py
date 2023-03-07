@@ -127,7 +127,7 @@ add_selectbox = st.sidebar.selectbox("Which model would you like to use?", ("gpt
 #st.sidebar.text_area('Note: Some models have been trained with select public content from www.huggies.com')
 
 st.title("Newborn & Infants Bot")
-st.text_area('On the day you bring your newborn baby home, life as you know it changes forever. Huggies has put all their tips, techniques and information in one place, to help make newborn baby care as easy as possible for new parents')
+st.text('On the day you bring your newborn baby home, life as you know it changes forever. Huggies has put all their tips, techniques and information in one place, to help make newborn baby care as easy as possible for new parents')
 if add_selectbox == "gpt-3.5-turbo":
     text1 = st.text_area('Enter your query:')
     #output = ""
