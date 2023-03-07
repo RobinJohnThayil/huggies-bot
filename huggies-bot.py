@@ -124,7 +124,7 @@ st.image(image, width=400)
 st.sidebar.info('Please choose the model from the dropdown below.')
 st.set_option('deprecation.showfileUploaderEncoding', False)
 add_selectbox = st.sidebar.selectbox("Which model would you like to use?", ("gpt-3.5-turbo", "text-davinci-003", "no context - davinci"))
-st.sidebar.text_area('Note: Some models have been trained with select public content from www.huggies.com')
+#st.sidebar.text_area('Note: Some models have been trained with select public content from www.huggies.com')
 
 st.title("Newborn & Infants Bot")
 st.text_area('On the day you bring your newborn baby home, life as you know it changes forever. Huggies has put all their tips, techniques and information in one place, to help make newborn baby care as easy as possible for new parents')
