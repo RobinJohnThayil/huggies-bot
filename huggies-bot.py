@@ -4,7 +4,7 @@ import numpy as np
 import openai
 from PIL import Image
 
-openai.api_key = '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'
+openai.api_key = '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'
 
 embeddings = pd.read_csv("embeddings.csv")
 embeddings = embeddings.drop(embeddings.columns[0], axis=1)
