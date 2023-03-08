@@ -126,21 +126,21 @@ st.sidebar.write('Note: Some models have been trained with select public content
 
 st.title("Newborn & Infants Bot")
 st.write('On the day you bring your newborn baby home, life as you know it changes forever. Huggies has put all their tips, techniques and information in one place, to help make newborn baby care as easy as possible for new parents')
-if add_selectbox == "gpt-3.5-turbo":
+if add_selectbox == "chatgpt-WIP":
     text1 = st.text_area('Enter your query:')
     output = ""
-    if st.button("Ask Huggies Bot"):
+    if st.button("Ask The Bot"):
         output = turbo(text1)
         st.success(output)
-elif add_selectbox == "text-davinci-003":
+elif add_selectbox == "Customized GPT3":
     text1 = st.text_area('Enter your query:')
     output = ""
-    if st.button("Ask Huggies Bot"):
+    if st.button("Ask The Bot"):
         output = davinciC(text1)
         st.success(output)
-elif add_selectbox == "no context - davinci":
+elif add_selectbox == "Default GPT3":
     text1 = st.text_area('Enter your query:')
     output = ""
-    if st.button("Ask Huggies Bot"):
+    if st.button("Ask The Bot"):
         output = davinciNC(text1)
         st.success(output)
