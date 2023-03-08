@@ -102,24 +102,21 @@ def turbo(query):
 st.markdown(
     """
 <style>
-button[title="View fullscreen"]{
-    visibility: hidden;}
-.css-1v0mbdj {
-    position: fixed;
-    top: -15px;
-    left: 30px;
-    z-index: 200;
+.css-fblp2m {
+    fill: rgb(255 255 255);
+}
+.css-18ni7ap {
+    background: #0f059e;
 }
 .css-1avcm0n {
-    background: rgb(251 0 0);
-    z-index: 100;
+    background: #0f059e;
 }
 </style>
 """,
     unsafe_allow_html=True,
 )
-image = Image.open('logo.png')
-st.image(image, width=400)
+#image = Image.open('logo.png')
+#st.image(image, width=400)
 
 st.sidebar.info('Please choose the model from the dropdown below.')
 st.set_option('deprecation.showfileUploaderEncoding', False)
