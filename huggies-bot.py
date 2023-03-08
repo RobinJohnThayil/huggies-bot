@@ -125,7 +125,7 @@ add_selectbox = st.sidebar.selectbox("", ("Customized GPT3", "Default GPT3","Cus
 st.sidebar.write('Note: Some models have been trained with select public content from www.huggies.com')
 
 st.title("Newborn & Infants Bot")
-st.write('On the day you bring your newborn baby home, life as you know it changes forever. Huggies has put all their tips, techniques and information in one place, to help make newborn baby care as easy as possible for new parents')
+st.write('On the day you bring your newborn baby home, life as you know it changes forever. We have put all tips, techniques and information in one place, to help make newborn baby care as easy as possible for new parents')
 if add_selectbox == "Customized ChatGPT (Experimental)":
     text1 = st.text_area('Enter your query:')
     output = ""
