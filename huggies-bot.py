@@ -5,7 +5,7 @@ import openai
 from PIL import Image
 
 image = Image.open('baby-g9242aba69_640.jpg')
-st.image(image)
+st.sidebar.image(image)
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 embeddings = pd.read_csv("embeddings.csv")
