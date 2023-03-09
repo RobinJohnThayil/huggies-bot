@@ -4,9 +4,10 @@ import numpy as np
 import openai
 from PIL import Image
 
-st.title("Newborn & Infants Bot")
 image = Image.open('baby-g9242aba69_640.jpg')
 st.image(image, width = 200)
+st.title("Newborn & Infants Bot")
+
 st.markdown("""---""")
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
