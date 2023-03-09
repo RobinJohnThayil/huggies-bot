@@ -4,7 +4,7 @@ import numpy as np
 import openai
 from PIL import Image
 
-image = Image.open('baby-g9242aba69_640.jpg')
+image = Image.open('fotor_2023-3-9_15_18_29.png')
 st.image(image, width = 200)
 st.title("Baby Bot")
 
