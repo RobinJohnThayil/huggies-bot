@@ -5,8 +5,8 @@ import openai
 from PIL import Image
 
 image = Image.open('baby-g9242aba69_640.jpg')
-st.sidebar.image(image)
-st.sidebar.markdown("""---""")
+st.image(image, width = 200)
+st.markdown("""---""")
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
