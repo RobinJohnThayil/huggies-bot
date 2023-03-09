@@ -6,7 +6,7 @@ from PIL import Image
 
 image = Image.open('baby-g9242aba69_640.jpg')
 st.image(image, width = 200)
-st.title("Newborn & Infants Bot")
+st.title("Baby Bot")
 
 st.markdown("""---""")
 
