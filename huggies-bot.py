@@ -152,5 +152,5 @@ elif add_selectbox == "Default GPT3":
         st.success(output)
 
        
- st.caption("Please reach out to robin.john@kcc.com for any queries", unsafe_allow_html=False)
+st.caption("Please reach out to robin.john@kcc.com for any queries", unsafe_allow_html=False)
 
