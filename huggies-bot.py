@@ -151,6 +151,6 @@ elif add_selectbox == "Default GPT3":
         output = davinciNC(text1)
         st.success(output)
 
-st.markdown("""---""")       
+st.sidebar.markdown("""---""")       
 st.sidebar.caption("Please reach out to robin.john@kcc.com for any queries", unsafe_allow_html=False)
 
