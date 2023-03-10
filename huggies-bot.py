@@ -134,7 +134,7 @@ add_selectbox = st.sidebar.selectbox("", ("Customized GPT3", "Default GPT3","Cus
  
 for count in range(20):
     st.sidebar.markdown("\n")
-st.markdown("""---""")
+st.sidebar.markdown("""---""")
   
 st.sidebar.caption('Note: Some models have been trained with select public content from www.huggies.com')
 st.sidebar.caption("Please reach out to robin.john@kcc.com for any queries", unsafe_allow_html=False)
