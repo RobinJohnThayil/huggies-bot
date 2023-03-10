@@ -150,3 +150,7 @@ elif add_selectbox == "Default GPT3":
     if st.button("Ask The Bot"):
         output = davinciNC(text1)
         st.success(output)
+
+       
+ st.caption("Please reach out to robin.john@kcc.com for any queries", unsafe_allow_html=False)
+
