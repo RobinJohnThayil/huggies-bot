@@ -132,11 +132,9 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 add_selectbox = st.sidebar.selectbox("", ("Customized GPT3", "Default GPT3","Customized ChatGPT (Experimental)"))
 
  
-st.sidebar.markdown("\n\n\n\n\n")
-st.sidebar.markdown("\n")
-st.sidebar.markdown("\n")
-st.sidebar.markdown("\n")
-st.sidebar.markdown("""---""")    
+for count in range(20):
+    st.sidebar.markdown("\n")
+  
 st.sidebar.caption('Note: Some models have been trained with select public content from www.huggies.com')
 st.sidebar.caption("Please reach out to robin.john@kcc.com for any queries", unsafe_allow_html=False)
 
