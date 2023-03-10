@@ -132,7 +132,7 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 add_selectbox = st.sidebar.selectbox("", ("Customized GPT3", "Default GPT3","Customized ChatGPT (Experimental)"))
 
  
-for count in range(20):
+for count in range(25):
     st.sidebar.markdown("\n")
 st.sidebar.markdown("""---""")
   
