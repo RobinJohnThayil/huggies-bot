@@ -10,6 +10,7 @@ st.title("Baby Bot")
 
 st.markdown("""---""")
 
+
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 embeddings = pd.read_csv("embeddings.csv")
@@ -128,8 +129,10 @@ st.sidebar.info('Please choose the model from the dropdown below.')
 st.set_option('deprecation.showfileUploaderEncoding', False)
 #add_selectbox = st.sidebar.selectbox("Which model would you like to use?", ("gpt-3.5-turbo", "text-davinci-003", "no context - davinci"))
 add_selectbox = st.sidebar.selectbox("", ("Customized GPT3", "Default GPT3","Customized ChatGPT (Experimental)"))
-st.sidebar.write('Note: Some models have been trained with select public content from www.huggies.com')
 
+st.sidebar.markdown("""---""")     
+st.sidebar.caption('Note: Some models have been trained with select public content from www.huggies.com')
+st.sidebar.caption("Please reach out to robin.john@kcc.com for any queries", unsafe_allow_html=False)
 
 st.write('On the day you bring your newborn baby home, life as you know it changes forever. We have put all tips, techniques and information in one place, to help make newborn baby care as easy as possible for new parents')
 if add_selectbox == "Customized ChatGPT (Experimental)":
@@ -151,6 +154,4 @@ elif add_selectbox == "Default GPT3":
         output = davinciNC(text1)
         st.success(output)
 
-st.sidebar.markdown("""---""")       
-st.sidebar.caption("Please reach out to robin.john@kcc.com for any queries", unsafe_allow_html=False)
 
