@@ -12,6 +12,8 @@ st.markdown("""---""")
 
 
 
+
+
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 embeddings = pd.read_csv("embeddings.csv")
